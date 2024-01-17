@@ -1,378 +1,238 @@
-<!--
-  | Website designed by JstnLT (https://jstnlt.my.id)
-  | This project is open source: https://github.com/JastinXyz/discord-bot-landing-page-web
--->
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nordy★</title>
-    <link rel="icon" type="image/x-icon" href="/logo.gif">
-    <link rel="stylesheet" href="assets/css/bulma.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <script src="assets/js/jquery-3.6.0.js"></script>
-  </head>
-  <body>
-    <!-- Back To Top Start -->
-    <a id="backtotop" data-tippy-content="Back To Top.">
-      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
-    </a>
-    <!-- Back To Top End -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nordy★ | Home</title>
+    <meta name="description" content="A simple all in one Discord bot.">
+    <meta name="theme-color" content="#31a5ff">
+    <link rel="icon" type="image/gif" sizes="300x250" href="./assets/img/pfp.gif">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-    <!-- Navbar Start -->
-    <nav
-      class="navbar is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand mt-2 mb-2">
-        <a class="navbar-item" href="#">
-          <strong>Nordy★</strong>
-
-          <!-- or if you want to use image -->
-          <!-- <img
-            src="image link or path"
-            width="112"
-            height="28"
-          /> -->
-        </a>
-
-        <a
-          role="button"
-          class="navbar-burger has-text-white"
-          data-target="navMenu"
-          aria-label="menu"
-          aria-expanded="false"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a href="/" class="navbar-item is-tab">
-            Home
-          </a>
-
-          <a href="#features" class="navbar-item is-tab">
-            Features
-          </a>
-
-          <a href="#stats" class="navbar-item is-tab">
-            Stats
-          </a>
-
-          <a href="https://github.com/halvi07/Nordy" class="navbar-item is-tab">
-            Docs
-          </a>
-        </div>
-
-        <div class="navbar-end">
-          <a href="https://discord.nordy.pro" class="navbar-item is-tab" target="_blank">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-
-          <a href="https://github.com/halvi07" class="navbar-item is-tab" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-
-          <div class="navbar-item">
-            <div class="buttons">
-              <a href="http://dash.nordy.pro:2000" class="button is-blurple">
-                <strong
-                  ><i class="fa-solid fa-right-to-bracket mr-2"></i>
-                  Login</strong
-                >
-              </a>
+<body style="background-color: var(--background);">
+    <div id="top" style="height: 12px;">
+        <nav class="navbar navbar-light navbar-expand fixed-top" style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
+            <div class="container-fluid"><a class="navbar-brand" href="/" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">Nordy★</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link active smoothScroll" href="/status" style="color: var(--text-color);">Status</a></li>
+                        <li class="nav-item"><a class="nav-link smoothScroll" href="/#commands" style="color: var(--text-color);">Commands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/invite" target="_blank" style="color: var(--text-color);">Invite</a></li>
+						<li class="nav-item"><a class="nav-link" href="/discord" target="_blank" style="color: var(--text-color);">Discord</a></li>
+						<li class="nav-item"><a class="nav-link" href="/dashboard" style="color: var(--text-color);">Dashboard</a></li>
+                    </ul>
             </div>
-          </div>
-        </div>
-      </div>
+    </div>
     </nav>
-    <!-- Navbar End -->
-
-    <!-- Hero Section Start -->
-    <section class="hero bg-base is-fullheight">
-      <div class="hero-body">
-        <div class="">
-          <div class="columns">
-            <div class="column mr-6 mt-12" data-aos="fade-up">
-              <p class="title has-text-white has-text-weight-bold">
-                Time to add Nordy★ to your server.
-              </p>
-              <p class="subtitle has-text-grey-light is-size-6 mt-3">
-                Nordy stands as a unified bot, setting you apart from the bot crowd, while seamlessly integrating all your necessities into one cohesive experience.
-              </p>
-              <div class="buttons">
-                <a href="https://invite.nordy.pro" class="button is-info">
-                  <strong>Add To Discord</strong>
-                </a>
+    </div>
+    <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="./assets/img/pfp.gif" width="150" height="150" style="margin-top: 30px;">
+        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Nordy★</h1>
+        <p style="color: var(--secondary-text-color);">The all-in-one Discord companion, effortlessly combines moderation, <br>entertainment, and utility, ensuring your server experience is as smooth<br> as the northern lights' dance in the Arctic sky!</p>
+        <div class="tada animated"><div role="group" class="btn-group">    <a href="./invite" target="_blank" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Invite Me</a>
+	
+	<a class="btn btn-primary smoothScroll shadow-none" role="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"
+        href="./#feature">Features</a></div></div>
+    </header>
+    <div id="feature" style="height: 90px;background: var(--secondary);"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--background)" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg></div></div>
+    <div class="features-boxed" style="background: var(--secondary);">
+        <div class="container" style="color: var(--main-color);">
+            <div class="intro">
+                <h2 class="text-center" style="color: var(--text-color);">Bot Features</h2>
             </div>
-            <div class="column mt-6" data-aos="fade-left">
-              <img
-                class="image has-image-centered vert-move mt-4"
-                src="assets/img/relaunch_day.svg"
-                alt="hero image"
-                style="width: 20rem;"
-              />
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box" style="/*border-radius: 34px;*/"><i class="fa fa-bolt icon" style="color: var(--main-color);"></i>
+                        <h3 class="name">User Friendliness</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Nordy, the Discord bot, takes user-friendliness to new heights with its seamlessly integrated dashboard and efficient slash commands, ensuring a remarkably easy-to-navigate experience.<br></p>
+                    </div>
+                </div>
+				<div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box" style="/*border-radius: 34px;*/"><i class="fa fa-flag icon" style="color: var(--main-color);"></i>
+                        <h3 class="name">Uptime</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Nordy guarantees nonstop availability, operating 24/7. Should any errors arise, our dedicated team is poised to address them promptly and effectively.<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box"><i class="fa fa-lock icon" style="color: var(--main-color);"></i>
+                        <h3 class="name">CO2-Free</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">We take pride in delivering both efficiency and environmental responsibility through our CO2-free servers. All our services are exclusively hosted on our proprietary server infrastructure.<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box"><i class="fa fa-smile-o icon" style="color: var(--main-color);"></i>
+                        <h3 class="name">Dashboard</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Nordy comes equipped with a seamlessly integrated dashboard, empowering effortless customization to suit your preferences.<br></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+        <div></div>
+    </div>
+    <div style="background-color: var(--background);"><div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-41.53,-9.56 C167.83,173.98 302.14,-60.89 534.09,89.10 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: var(--secondary);"></path></svg></div></div>
+    <div id="commands">
+        <section>
+            <div class="container-fluid text-white">
+                <div class="row row-cols-3 justify-content-center" style="color: var(--secondary-text-color);">
+                    <div class="col-auto col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter">
+                        <h1 class="love_count servers" id="servers" style="font-size: 70px;">0+</h1>
+                        <h4 style="color: var(--main-color);margin-top: -6px;">Total Servers</h4>
+                    </div>
+                    <div class="col-auto col-lg-4 text-center align-self-center pb-5 pt-5 love_counter">
+                        <h1 class="love_count users" id="users" style="font-size: 70px;">0+</h1>
+                        <h4 style="color: var(--main-color);margin-top: -6px;">Total Users</h4>
+                    </div>
+                </div>
+            </div>
+        </section><div class="container">
+  <h2>All Commands</h2>
+  <div class="accordion">
+          
+          <div class="accordion-item">
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🛑 Powerful Moderation:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Moderation Commands: <br>
+            Commands: ban, unban, timeout, voice moderation, deafen, move, warn, setnick, ...<br>
+            Multi-Function Purge Commands.<br>
+            Commands: purge, purge attach, purge bots, purge links, purge token, purge user, ...</p>
       </div>
-      <div class="has-text-centered" data-tippy-content="Scroll Down">
-        <a href="#features"
-          ><i
-            class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"
-          ></i
-        ></a>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🤖 Auto Moderation:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Anti system:<br>
+            Commands: anti ghostping, anti spam, anti massmention, ...<br><br>
+            Auto Delete system:<br>
+            Commands: autodelete attachments, autodelete invites, autodelete links, autodelete maxlines, ...<br><br>
+            AutoMod system:<br>
+            Commands: automod status, automod strikes, automod action, automod debug, automod whitelist, ...</p>
       </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Hero Waves Start -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#1a2634"
-        fill-opacity="1"
-        d="M0,288L24,261.3C48,235,96,181,144,154.7C192,128,240,128,288,149.3C336,171,384,213,432,202.7C480,192,528,128,576,133.3C624,139,672,213,720,213.3C768,213,816,139,864,101.3C912,64,960,64,1008,106.7C1056,149,1104,235,1152,240C1200,245,1248,171,1296,144C1344,117,1392,139,1416,149.3L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
-      ></path>
-    </svg>
-    <!-- Hero Waves End -->
-
-    <!-- Features Section Start -->
-    <section id="features" class="section mt-6">
-      <div class="has-text-centered">
-        <h1 class="title lined">Features</h1>
-        <div class="line line-center blurple"></div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">⚙️ Admin Configuration:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Let a bot be the server's assistant!<br>
+            Commands: autorole, farewell, welcome, counters, flag translation, reaction roles, ...<br><br>
+            Make custom settings for your own server.<br>
+            Commands: setprefix, maxwarns, modlog...</p>
       </div>
-
-      <!-- single feature start (Left) -->
-      <div class="single-feature">
-        <div class="shape-right" data-aos="fade-up-left">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill="#9AAAE3"
-              d="M42.7,-62.9C50.9,-52.8,50.1,-34.4,51.7,-19.2C53.4,-4,57.4,8,56.6,20.8C55.8,33.7,50.1,47.4,39.9,53.8C29.6,60.1,14.8,59.1,0.4,58.5C-14,58,-28,57.9,-38,51.5C-48.1,45,-54.3,32.3,-61.3,18.1C-68.4,4,-76.4,-11.7,-71.9,-22.7C-67.4,-33.6,-50.4,-39.8,-36.3,-47.9C-22.2,-56.1,-11.1,-66.3,3.1,-70.5C17.2,-74.7,34.5,-72.9,42.7,-62.9Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-        </div>
-
-        <div class="columns mt-6">
-          <div class="column mr-6">
-            <h4 class="title">Feature <span class="blurple">#1</span></h4>
-            <p class="subtitle mt-3">
-              Nordy, the Discord bot, takes user-friendliness to new heights with its seamlessly integrated dashboard and efficient slash commands, ensuring a remarkably easy-to-navigate experience.
-            </p>
-          </div>
-          <div class="column" data-aos="fade-left">
-            <img
-              class="image has-image-centered"
-              src="assets/img/features_overview.svg"
-              alt="feature1 img"
-              style="width: 20rem;"
-            />
-          </div>
-        </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">💁 Information Gathering:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>User Context Interactions<br>
+            Advanced Information Get deep information about a user, channel, role, etc.</p>
       </div>
-      <!-- single feature end (Left) -->
-
-      <!-- single feature start (Right) -->
-      <div class="single-feature">
-        <div class="shape-left" data-aos="fade-up-right">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill="#9AAAE3"
-              d="M54.2,-67.2C69.4,-63.5,80.4,-46.6,84.6,-28.7C88.7,-10.8,86,8.1,76.8,21.4C67.6,34.7,51.9,42.3,38.1,50.3C24.2,58.3,12.1,66.7,-2.8,70.5C-17.7,74.3,-35.3,73.6,-45.6,64.5C-55.9,55.3,-58.8,37.7,-63.3,21.2C-67.7,4.7,-73.7,-10.6,-71.8,-25.4C-69.8,-40.2,-59.9,-54.5,-46.6,-58.9C-33.3,-63.2,-16.7,-57.6,1.4,-59.6C19.5,-61.5,39,-71,54.2,-67.2Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-        </div>
-
-        <div class="columns mt-6">
-          <div class="column" data-aos="fade-right">
-            <img
-              class="image has-image-centered"
-              src="assets/img/product_literation.svg"
-              alt="feature1 img"
-              style="width: 20rem;"
-            />
-          </div>
-          <div class="column">
-            <h4 class="title">
-              Feature <span class="has-text-primary">#2</span>
-            </h4>
-            <p class="subtitle mt-3">
-              Nordy guarantees nonstop availability, operating 24/7. Should any errors arise, our dedicated team is poised to address them promptly and effectively.
-            </p>
-          </div>
-        </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🎵 Music:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>LossLess Music! Enjoy high quality lossless music<br>
+            Multi-Platform Play music from YouTube, SoundCloud, Spotify, and more<br>
+            Filters Apply filters to your music and spice it up</p>
       </div>
-      <!-- single feature end (Right) -->
-
-      <!-- single feature start (Left) -->
-      <div class="single-feature">
-        <div class="shape-right" data-aos="fade-up-left">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill="#9AAAE3"
-              d="M42.7,-62.9C50.9,-52.8,50.1,-34.4,51.7,-19.2C53.4,-4,57.4,8,56.6,20.8C55.8,33.7,50.1,47.4,39.9,53.8C29.6,60.1,14.8,59.1,0.4,58.5C-14,58,-28,57.9,-38,51.5C-48.1,45,-54.3,32.3,-61.3,18.1C-68.4,4,-76.4,-11.7,-71.9,-22.7C-67.4,-33.6,-50.4,-39.8,-36.3,-47.9C-22.2,-56.1,-11.1,-66.3,3.1,-70.5C17.2,-74.7,34.5,-72.9,42.7,-62.9Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-        </div>
-
-        <div class="columns mt-6">
-          <div class="column mr-6">
-            <h4 class="title">
-              Feature <span class="has-text-warning">#3</span>
-            </h4>
-            <p class="subtitle mt-3">
-              We take pride in delivering both efficiency and environmental responsibility through our CO2-free servers. All our services are exclusively hosted on our proprietary server infrastructure.
-            </p>
-          </div>
-          <div class="column" data-aos="fade-left">
-            <img
-              class="image has-image-centered"
-              src="assets/img/feeling_happy.svg"
-              alt="feature1 img"
-              style="width: 20rem;"
-            />
-          </div>
-        </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🎉 Giveaways:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Easy to use Create giveaways with ease<br>
+            Role specific giveaways<br>
+            Customizable Customize the giveaway to your liking<br>
+            Limitless Create unlimited giveaways</p>
       </div>
-      <!-- single feature end (Left) -->
-
-      <!-- single feature start (Right) -->
-      <div class="single-feature">
-        <div class="shape-left" data-aos="fade-up-right">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill="#9AAAE3"
-              d="M54.2,-67.2C69.4,-63.5,80.4,-46.6,84.6,-28.7C88.7,-10.8,86,8.1,76.8,21.4C67.6,34.7,51.9,42.3,38.1,50.3C24.2,58.3,12.1,66.7,-2.8,70.5C-17.7,74.3,-35.3,73.6,-45.6,64.5C-55.9,55.3,-58.8,37.7,-63.3,21.2C-67.7,4.7,-73.7,-10.6,-71.8,-25.4C-69.8,-40.2,-59.9,-54.5,-46.6,-58.9C-33.3,-63.2,-16.7,-57.6,1.4,-59.6C19.5,-61.5,39,-71,54.2,-67.2Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-        </div>
-
-        <div class="columns mt-6">
-          <div class="column" data-aos="fade-right">
-            <img
-              class="image has-image-centered"
-              src="assets/img/music.svg"
-              alt="feature1 img"
-              style="width: 20rem;"
-            />
-          </div>
-          <div class="column">
-            <h4 class="title">Feature <span class="has-text-info">#4</span></h4>
-            <p class="subtitle mt-3">
-              Nordy comes equipped with a seamlessly integrated dashboard, empowering effortless customization to suit your preferences.
-
-            </p>
-          </div>
-        </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🫂 Social Content:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>You Have A CV In Each Server-Specific Bot!<br>
+            Commands: rep, rep view...<br><br>
+            Do You Love Someone?<br>
+            Commands: rep give...</p>
       </div>
-      <!-- single feature end (Right) -->
-    </section>
-    <!-- Features Section End -->
-
-    <!-- Stats Section Start -->
-    <section id="stats" class="section mt-6">
-      <div class="has-text-centered">
-        <h1 class="title lined">Stats</h1>
-        <div class="line line-center blurple"></div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🎟 Ticket System:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Make Supporting Members A Breeze With Tickets!<br>
+            Highly customizable ticket system with staff roles<br>
+            Multiple Categories<br>
+            Don't Want The Tickets To Be Everywhere? Categorize them using select menus</p>
       </div>
-
-      <div class="columns mt-6">
-        <div class="column has-text-centered">
-          <p class="title has-text-weight-bold lined">50+</p>
-          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-server"></i> Servers</span>
-        </div>
-
-        <div class="column has-text-centered">
-          <p class="title has-text-weight-bold lined">100+</p>
-          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-terminal"></i> Commands</span>
-        </div>
-
-        <div class="column has-text-centered">
-          <p class="title has-text-weight-bold lined">1500+</p>
-          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-users"></i> Users</span>
-        </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">📉 Stats Tracking:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Levelling Track your server's activity with a level system<br>
+            Leaderboards See who is the most active user in your server<br>
+            Customizable System Configure the levelup message, rank cards to your liking</p>
       </div>
-    </section>
-    <!-- Stats Section End -->
-
-    <!-- Invite Section Start -->
-    <section class="section mt-6">
-      <div class="columns">
-        <div class="column has-text-left">
-          <p class="title has-text-weight-bold">
-            Ready to try <span class="blurple">Nordy★</span>?
-          </p>
-          <p class="subtitle mt-3 has-text-gray">
-          </p>
-          <a href="#" class="button is-blurple is-medium"
-            ><strong><i class="fa-solid fa-book"></i> Get Started</strong></a
-          >
-        </div>
-
-        <div class="column"></div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🙋‍♂️ Suggestions:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Get Suggestions From Server Members To Help Your Server Become The Best!<br>
+            Commands: suggest, suggestion...<br><br>
+            Accept Or Decline The Suggestions And Customize Them To The Max!<br>
+            Commands: suggestion status, suggestion channel, suggestion appch, suggestion rejch, suggestion approve, suggestion staffadd, suggestion staffremove...</p>
       </div>
-    </section>
-    <!-- Invite Section End -->
-
-    <!-- Footer Section Start -->
-    <footer class="footer bg-base">
-      <div class="content has-text-centered has-text-white">
-        <div class="mb-2">
-          <a href="#" class="has-text-white" target="_blank">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-          &nbsp; &nbsp;
-          <a href="#" class="has-text-white" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-
-        <p>
-          <span class="has-text-weight-bold">Nordy★</span>
-          <br />
-          &copy; <span id="cp-year"></span> Copyright Halvi★ All Rights
-          Reserved.
-        </p>
-
-        <p style="letter-spacing: 0.1em;" class="is-uppercase">
-          Website Designed By
-          <a
-            href="https://github.com/halvi07"
-            class="blurple has-text-weight-bold"
-            target="_blank"
-            >Halvi★</a>.
-          >
-        </p>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">⚒️ Utility Commands:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Need Some Help With Something? Use The Utility Commands To Find Out The Answer To It<br>
+            Commands: bigemoji, covid, pokedex, urban, weather, ...<br><br>
+            Need Help With Some More Stuff?<br>
+            Commands: help, proxies, translate, paste, ...</p>
       </div>
-    </footer>
-    <!-- Footer Section End -->
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">⭐ Anime Content:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Love Anime? Express You Love To Someone Using The React Commands<br>
+            Commands: react, hug, kiss, cuddle, pat, poke, slap, smug, ...</p>
+      </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">🪙 Economy System:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Want To Become Richest? Use The Economy Commands!<br>
+            Commands: bank, daily, beg, gamble...<br><br>
+            Give People Money, Check Your Balance, Or Just Flex!<br>
+            Commands: bank balance, bank deposit, bank withdraw, bank transfer, ...</p>
+      </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">😁 Fun Commands:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Have Some Fun In Your Server!<br>
+            Commands: animal, facts, meme, flip, ...<br><br>
+            Play Games And Enjoy Yourself<br>
+            Commands: snake, together, flip coin, flip text, ...</p>
+      </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">📨 Invite Tracking:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Track who has been inviting people to your server!<br>
+            Invite Ranks! Inviter can get awesome rewards and be recognised<br>
+            Configure these settings and customize them to your liking!<br>
+            Commands: resetinvites, addinvites, invitesimport, inviterank...</p>
+      </div>
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">📷 Image Manipulation:</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Customize other peoples avatars<br>
+            Commands: blur, greyscale, invert, pixelate, blur, sepia, sharpen, ad, affect, beautiful, color...<br><br>
+            Make some images by yourself or make some art<br>
+            Commands: bobross, confusedstonk, delete, facepalm,  hitler, jail, jokeoverhead, karaba, mms, notstonk, poutine, rainbow, rip,  shit, stonk, tatoo, thomas, trash, wanted, wasted, ...</p>
+      </div>
+    </div>
+          
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+  </div>
+</div></div>
+    <div class="team-clean" style="background: rgba(0,0,0,0);">
+        <div class="container" style="filter: blur(0px);padding-bottom: 0px;">
+            <h3 class="text-center name" style="color: var(--secondary-text-color)">Top Servers Using Out Bot</h3>
+            <div class="intro"></div>
+            <div class="row row-cols-4 d-flex d-xl-flex justify-content-center justify-content-xl-center people" style="padding-bottom: 0px;">
+                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/nightbox" target="_blank"><img class="rounded-circle partner" src="https://i.imgur.com/4Fr1DZ6.png?size=1280"></a><p>NightboxRP</p></div>
+            </div>
+        </div>
+    </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--secondary)" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,154.7C384,171,480,213,576,218.7C672,224,768,192,864,181.3C960,171,1056,181,1152,192C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="footer-dark" style="background: var(--secondary);padding-top: 0px;padding-bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col item social"><a class="smoothScroll" href="#top"><i class="icon ion-android-arrow-up"></i></a></div>
+            </div>
+            <p class="copyright" style="color: var(--text-color);">Nordy★ © 2024 Halvi</p>
+            <p class="copyright" style="color: var(--text-color);padding: 0px;">
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Counting.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
 </html>
