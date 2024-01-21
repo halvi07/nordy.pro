@@ -1,4 +1,4 @@
-const users = 5700;
+const users = 5600;
 const servers = 55;
 
 jQuery(window).scroll(startCounter);
@@ -31,7 +31,7 @@ function startCounter() {
 			}
 			else if(this.classList.contains("users")){
 				jQuery({ Counter: 0 }).animate({ Counter: users }, {
-					duration: 4000,
+					duration: 8000,
 					easing: 'swing',
 					step: function () {
 						$this.text(Math.ceil(this.Counter) + '+');
